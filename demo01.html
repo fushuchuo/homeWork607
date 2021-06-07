@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            background-color: red;
+            height: 60px;
+            line-height: 60px;
+            margin: 0 auto;
+        }
+        .two{
+            background-color: blue;
+            height: 60px;
+            line-height: 60px;
+            margin:0 auto;
+        }
+        .three{
+            background-color: black;
+            height: 60px;
+            line-height: 60px;
+            margin: 0 auto;
+        }
+        .four{
+            background-color: orange;
+            height: 60px;
+            line-height: 60px;
+            margin: 0 auto;
+        }
+        @media screen and (min-width:1200px) {
+            .container{
+                height: 60px;
+                width: 1200px;
+            }
+            .one, .two, .three, .four{
+                width: 300px;
+                float: left;
+            }
+        }
+        @media screen and (min-width:992px) and (max-width:1199px) {
+            .container{
+                width: 992px;
+                height: 120px;
+            }
+            .one{
+                width: 992px;
+                float: none;
+                clear: both;
+            }
+            .two, .three{
+                width: 331px;
+                float: left;
+            }
+            .four{
+                width: 330px;
+                float: right;
+            }
+            
+        }
+        @media screen and (min-width:768px) and (max-width:991px) {
+            .container{
+                width: 768px;
+                height: 180px;
+            }
+            .one, .three{
+                width: 384px;
+                float: left;
+            }
+            .two, .four{
+                width: 384px;
+                float: right;
+            }
+        }
+        @media screen and (max-width:767px) {
+            .container{
+                width: 100%;
+                height: 240px;
+            }
+            .one, .two, .three, .four{
+                width: 100%;
+                float: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="one">1</div>
+        <div class="two">2</div>
+        <div class="three">3</div>
+        <div class="four">4</div>
+    </div>
+</body>
+</html>
